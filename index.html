@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Says - 2 Player Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>🎮 Simon Says - 2 Player Battle</h1>
+  <h2 id="status">Press "Start Game" to begin</h2>
+
+  <div class="game-container">
+    <div class="left-panel">
+      <div id="p1Box" class="player-box">
+        <h3>Player 1</h3>
+        <p>Lives: <span id="p1Lives">5</span></p>
+        <p>Score: <span id="p1Score">0</span></p>
+        <p>Round Score: <span id="p1RoundScore">0</span></p>
+      </div>
+      <div id="p2Box" class="player-box">
+        <h3>Player 2</h3>
+        <p>Lives: <span id="p2Lives">5</span></p>
+        <p>Score: <span id="p2Score">0</span></p>
+        <p>Round Score: <span id="p2RoundScore">0</span></p>
+      </div>
+    </div>
+
+    <div class="center-panel">
+      <div class="btn-container">
+        <div class="line-one">
+          <div class="btn red" id="red"></div>
+          <div class="btn yellow" id="yellow"></div>
+        </div>
+        <div class="line-two">
+          <div class="btn green" id="green"></div>
+          <div class="btn purple" id="purple"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+        <button id="resetBtn">Restart</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h3>🏆 Live Leaderboard</h3>
+      <div id="leaderboard">
+        <p>Player 1: <span id="liveP1">0</span></p>
+        <p>Player 2: <span id="liveP2">0</span></p>
+      </div>
+      <h3>Final Result</h3>
+      <p id="finalResult">—</p>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="sound-red" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
+  <audio id="sound-yellow" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+  <audio id="sound-green" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle_to_drum_hit.ogg"></audio>
+  <audio id="sound-purple" src="https://actions.google.com/sounds/v1/cartoon/pop.ogg"></audio>
+  <audio id="sound-wrong" src="https://actions.google.com/sounds/v1/cartoon/metal_clang.ogg"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+cd c:\Users\mohit\javascript\n
+git init
+git add .
+git commit -m "Initial commit: Simon Says 2-Player Battle game"cd c:\Users\mohit\javascript\n
+git init
+git add .
+git commit -m "Initial commit: Simon Says 2-Player Battle game"git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/simon-says-game.git
+git push -u origin main
